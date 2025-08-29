@@ -1,15 +1,64 @@
-.upc{
-    width:350px;
-    margin:20px;
-    border-radius:4px;
-    padding-bottom: 20px;
-    background: white;
+.upc {
+    width: 350px;
+  margin: 40px auto;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  height: 700px;
+
 }
-.gradient{
+
+.gradient {
     background: linear-gradient(to right, #6a11cb, #2575fc);
-    height: 125px;
-    border-radius: 4px 4px 0px 0px;
+  height: 300px;
+  border-radius: 8px 8px 0 0;
+  position: relative;
 }
-.profile-down img{
-    
+
+.profile-down img {
+width: 130px;
+  height: px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translateX(-50%);
+  background: white;
+  object-fit: cover;
+}
+.profile-down{
+    padding:80px 20px 20px;
+}
+.profile-title {
+ font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.profile-description {
+     font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+
+}
+.profile-button{
+    font-size:16px;
+    background: #2b5dff;
+    margin :10px 100px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    border-radius: 40px;
+
+}
+a{
+ display: inline-block;
+  font-size: 15px;
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: 500;
 }

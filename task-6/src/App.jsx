@@ -1,5 +1,6 @@
 
 import './App.css'
+import UserProfileCard from './Components/Assets/UserProfileCard/UsreProfileCard'
 
 function App() {
 
