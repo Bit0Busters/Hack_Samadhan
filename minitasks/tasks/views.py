@@ -7,7 +7,7 @@ student_list =  ['Ram','Aam','Sham','Kam','Nam']
 def hello_world(request):
     return JsonResponse({"Message":"Hello World"})
 
-@api_view(['GET','POST'])
+@api_view(['GET','POST','PUT','DELETE'])
 def students(request):
     if request.method == "GET":
         return JsonResponse({"Succes":True,"Stuents":student_list})
@@ -16,4 +16,9 @@ def students(request):
         list_std = get_student["Student_list"]
         student_list.extend(list_std)
         return JsonResponse({"Succes":True,"Updated Stuents":student_list})
+    
+
+
+
+    
     
