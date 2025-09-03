@@ -36,6 +36,34 @@ def students(request):
         l = student_list()
 
         return JsonResponse({"Succes":True,"Updated Stuents":l})
+    if request.method =="PUT":
+        get_student = request.data 
+        list_std = get_student["Student_list"]
+        for d in list_std:
+            if "student_id" in d:
+                id = d["student_id"]
+                stdnt = Student.objects.get(student_id=id)
+                if "name" in d:
+                    stdnt.name = d["name"]
+                if "age" in d:
+                    stdnt.age = d["age"]
+                if "class" in d:
+                    stdnt.class_name =  d["class"]
+                stdnt.save()
+        l = student_list()
+        return JsonResponse({"Succes":True,"Updated Stuents":l})
+    if request.method == "DELETE":
+        get_student = request.data 
+        list_std = get_student["Student_list"]
+        for id in list_std:
+            stdnt = Student.objects.get(student_id=id)
+            stdnt.delete()
+
+
+
+
+
+
     
     
 

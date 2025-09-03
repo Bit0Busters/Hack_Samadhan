@@ -5,4 +5,5 @@ class Student(models.Model):
     name = models.CharField(max_length=250)
     age= models.IntegerField()
     class_name = models.CharField(max_length=10)
+    student_id = models.IntegerField(default=0)
      
